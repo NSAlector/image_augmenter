@@ -136,7 +136,7 @@ class ImageNoiser:
         self.noisy_image = result    
         return self.noisy_image
     
-    def add_wave_filter(self, intensity=0.5, direction='horizontal', frequency=0.1):
+    def add_wave_filter(self, intensity=1, direction='horizontal', frequency=0.1):
         return self.add_geometric_filter(
             GeometricFilterType.WAVE,
             intensity=intensity,
@@ -164,16 +164,16 @@ if __name__ == "__main__":
     test_img = np.random.randint(0, 255, (300, 400, 3), dtype=np.uint8)
     cv2.imwrite("test.jpg", test_img)
     
-    loader.load("test.jpg")
+    loader.load("download.jpeg")
     noiser = ImageNoiser(loader)
     
     print("\n")
-    noisy_gauss = noiser.add_gaussian_noise(sigma=30)
+    noisy_gauss = noiser.add_gaussian_noise(sigma=68)
     
     noiser.save_noisy("Pictures/noisy_gauss.jpg")
     
     print("\n")
-    noisy_sp = noiser.add_salt_pepper_noise(salt_prob=0.02, pepper_prob=0.02)
+    noisy_sp = noiser.add_salt_pepper_noise(salt_prob=0.2, pepper_prob=0.2)
 
     noiser.save_noisy("Pictures/noisy_salt_pepper.jpg")
     
