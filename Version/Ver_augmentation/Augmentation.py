@@ -1,4 +1,4 @@
-from Load_Image import ImageLoad
+from Version.Ver_load.Load_Image import ImageLoad
 from typing import Callable
 import cv2
 import numpy as np

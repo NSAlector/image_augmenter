@@ -1,4 +1,4 @@
-from Load_Image import ImageLoad
+from Version.Ver_load.Load_Image import ImageLoad
 from abc import ABC, abstractmethod
 from typing import Callable
 import cv2
@@ -272,7 +272,7 @@ class Histogramm(Noises):
         
         return cdf_normalized
     
-    def _calculate_histogram(self, loader: np.ndarray) -> np.ndarray:
+    def _calculate_histogram(self, loader: Callable) -> np.ndarray:
         """
         Вычисляет гистограмму изображения
         """
@@ -332,4 +332,4 @@ if __name__ == '__main__':
     hits = Histogramm()
     hits._calculate_histogram(loader1)
     
-    hits.save_hist("Pictures/histogramm.png")
+    hits.save_hist("Pictures/histogramm.jpg")
