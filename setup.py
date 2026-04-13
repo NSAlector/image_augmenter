@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="noise_library",
+    name="augmentations_library",
     version="1.0.0",
     author="Oleg",
     description="Пакет для динамического добавления шумов и фильтров на изображения",
