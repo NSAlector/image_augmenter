@@ -1,0 +1,10 @@
+README.md
+setup.py
+augmentations_library/Effects.py
+augmentations_library/Loader.py
+augmentations_library/__init__.py
+augmentations_library.egg-info/PKG-INFO
+augmentations_library.egg-info/SOURCES.txt
+augmentations_library.egg-info/dependency_links.txt
+augmentations_library.egg-info/requires.txt
+augmentations_library.egg-info/top_level.txt
