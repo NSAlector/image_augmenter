@@ -1,4 +1,4 @@
-from noise_lab import ImageLoader, GaussianNoise, MedianFilter, WaveEffect
+from augmentations_library import ImageLoader, GaussianNoise, MedianFilter, WaveEffect
 
 def solve():
 
