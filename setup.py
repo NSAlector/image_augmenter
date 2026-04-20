@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="augmentations_library",
+    name="augmentations_library_mipt_project",
     version="1.0.0",
     author="Oleg",
     description="Пакет для динамического добавления шумов и фильтров на изображения",
