@@ -50,4 +50,3 @@
 - PRNG-порог в `AugmentationManager.batch_augment` фиксирован (0.5). Можно изменить логику порога в коде для управления долей применений.
 - `Find_image.py` полагается на `MIPT_practice.find_image.find_unique_images`.
 - Работа с путями в `imageviewer` учитывает переносы на разных дисках и пытается корректно определять, находится ли файл в `Images`.
-
